@@ -419,11 +419,20 @@ $txt_note4 = $_POST['txt_note4'];
 $txt_note5 = $_POST['txt_note5'];
 
 
+echo 'ท่านได้สั่ง<br/>';
 
 if(($t1 == tumyum1 || $t1 == water1) ){
 	
 	$sum1 = ($count1 * 35) + ($count_fish1 * 55) + 
 	($count_kun1 * 55) + ($count_egg1 * 10 ) ;
+	if($t1 == tumyum1){
+		echo ' หมี่ขาว ต้มยำ จำนวน : ',$count1,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish1,' ตัว กุ้ง จำนวน : ',$count_kun1,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg1,' ฟอง ราคา : ',$sum1,'<br/>';
+
+	}
+	if($t1 == water1){
+		echo ' หมี่ขาว น้ำใส จำนวน : ',$count1,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish1,' ตัว กุ้ง จำนวน : ',$count_kun1,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg1,' ฟอง ราคา : ',$sum1,'<br/>';
+
+	}
 	
 	
 	
@@ -434,7 +443,14 @@ if(($t2 == tumyum2 || $t2 == water2)){
 	
 	$sum2 = ($count2 * 35) + ($count_fish2 * 55) + 
 	($count_kun2 * 55) + ($count_egg2 * 10 ) ;
-	
+	if($t2 == tumyum2){
+		echo ' เส้นเล็ก ต้มยำ จำนวน : ',$count2,'ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish2,' ตัว กุ้ง จำนวน : ',$count_kun2,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg2,' ฟอง ราคา : ',$sum2,'<br/>';
+
+	}
+	if($t2 == water2){
+		echo ' เล้นเล็ก น้ำใส จำนวน : ',$count2,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish2,' ตัว กุ้ง จำนวน : ',$count_kun2,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg2,' ฟอง ราคา : ',$sum2,'<br/>';
+
+	}
 	
 }
 
@@ -443,7 +459,14 @@ if(($t3 == tumyum3 || $t3 == water3)){
 		$sum3 = ($count3 * 35) + ($count_fish3 * 55) + 
 	($count_kun3 * 55) + ($count_egg3 * 10 ) ;
 	
-	
+	if($t3 == tumyum3){
+		echo ' เส้นใหญ่ ต้มยำ จำนวน : ',$count3,'ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish3,' ตัว กุ้ง จำนวน : ',$count_kun3,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg3,' ฟอง ราคา : ',$sum3,'<br/>';
+
+	}
+	if($t3 == water3){
+		echo ' เส้นใหญ่ น้ำใส จำนวน : ',$count3,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish3,' ตัว กุ้ง จำนวน : ',$count_kun3,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg3,' ฟอง ราคา : ',$sum3,'<br/>';
+
+	}
 	
 	
 }
@@ -451,19 +474,34 @@ if(($t3 == tumyum3 || $t3 == water3)){
 if(($t4 == tumyum4 || $t4 == water4) && $count4 > 0){
 	$sum4 = ($count4 * 35) + ($count_fish4 * 55) + 
 	($count_kun4 * 55) + ($count_egg4 * 10 ) ;
-	
+	if($t4 == tumyum4){
+		echo ' บะหมี่ ต้มยำ จำนวน : ',$count4,'ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish4,' ตัว กุ้ง จำนวน : ',$count_kun4,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg4,' ฟอง ราคา : ',$sum4,'<br/>';
+
+	}
+	if($t4 == water4){
+		echo ' บะหมี่ น้ำใส จำนวน : ',$count4,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish4,' ตัว กุ้ง จำนวน : ',$count_kun4,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg4,' ฟอง ราคา : ',$sum4,'<br/>';
+
+	}
 	
 }
 
 if(($t5 == tumyum5 || $t5 == water5) && $count5 > 0){
 	$sum5 = ($count5 * 35) + ($count_fish5 * 55) + 
 	($count_kun5 * 55) + ($count_egg5 * 10 ) ;
-	
+	if($t5 == tumyum5){
+		echo ' วุ้นเส้น ต้มยำ จำนวน : ',$count5,'ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish5,' ตัว กุ้ง จำนวน : ',$count_kun5,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg5,' ฟอง ราคา : ',$sum5,'<br/>';
+
+	}
+	if($t5 == water5){
+		echo ' วุ้นเส้น น้ำใส จำนวน : ',$count5,' ชาม เพิ่ม ปลาหมึก จำนวน : ',$count_fish5,' ตัว กุ้ง จำนวน : ',$count_kun5,' ตัว และ ไข่ยางมะตูม จำนวน : ',$count_egg5,' ฟอง ราคา : ',$sum5,'<br/>';
+
+	}
 	
 }
 
 
-echo $sum1+$sum2+$sum3+$sum4+$sum5;
+
+echo 'รวมเงิน ',$sum1+$sum2+$sum3+$sum4+$sum5;
 
 }else{
 	echo 'กรุณาเลือกน้ำต้มยำ หรือน้ำใส่';
