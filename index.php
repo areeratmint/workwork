@@ -20,7 +20,8 @@
     <thead>
     <tr>
       <td width="61">เส้น</td>
-      <td width="50">ต้มยำ</td>
+      <td width="50">ต้มยำ.</td>
+       <td width="83">จำนวน</td>
       <td width="39">น้ำใส</td>
       <td width="83">จำนวน</td>
       <td width="76">ปลาหมึก</td>
@@ -37,6 +38,21 @@
         </label>
         <br />
       </p></td>
+      <td>
+        <select name="count11" id="count11">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        /ชาม</td>
       <td><input type="radio" name="t1" value="water1" id="t1_1" /></td>
       <td>
         <select name="count1" id="count1">
@@ -104,6 +120,21 @@
           <input type="radio" name="t2" value="tumyum2" id="t2_0" />
         </label>
       </p></td>
+         <td>
+        <select name="count12" id="count12">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        /ชาม</td>
       <td><input type="radio" name="t2" value="water2" id="t2_1" /></td>
       <td><select name="count2" id="count2">
        <option value="0">0</option>
@@ -171,6 +202,21 @@
         </label>
         <br />
       </p></td>
+         <td>
+        <select name="count13" id="count13">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        /ชาม</td>
       <td><input type="radio" name="t3" value="water3" id="t3_1" /></td>
       <td><select name="count3" id="count3">
       <option value="0">0</option>
@@ -238,6 +284,21 @@
         </label>
         <br />
       </p></td>
+         <td>
+        <select name="count14" id="count14">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        /ชาม</td>
       <td><input type="radio" name="t4" value="water4" id="t4_1" /></td>
       <td><select name="count4" id="count4">
       <option value="0">0</option>
@@ -305,6 +366,21 @@
         </label>
         <br />
       </p></td>
+         <td>
+        <select name="count15" id="count15">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        /ชาม</td>
       <td><input type="radio" name="t5" value="water5" id="t5_1" /></td>
       <td><select name="count5" id="count5">
       <option value="0">0</option>
@@ -365,10 +441,12 @@
       <td><input type="text" name="textfield4" id="textfield5" /></td>
     </tr>
   </table>
+  
+  
   <p>
    <input name="btn_sum" class="btn btn-primary" type="submit" id="btn_sum" value="สั่ง"/>
   
-  </p>
+  ****ต้มยำ - น้ำใส ธรรมดา 35 เพิ่มกุ้ง 55 บาท/ตัว ปลาหมึก 55 บาท/ตัว ไขยางมะตูม 10 บาท/ฟอง****</p>
   
   <p><br />
   </p>
@@ -393,6 +471,12 @@ $count2 = $_POST['count2'];
 $count3 = $_POST['count3'];
 $count4 = $_POST['count4'];
 $count5 = $_POST['count5'];
+
+$count11 = $_POST['count11'];
+$count12 = $_POST['count12'];
+$count13 = $_POST['count13'];
+$count14 = $_POST['count14'];
+$count15 = $_POST['count15'];
 
 $count_fish1 = $_POST['count_fish1'];
 $count_fish2 = $_POST['count_fish2'];
