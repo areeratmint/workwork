@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,25 +10,24 @@
 <link href="http://se.ict.up.ac.th/bootstrap/js/bootstrap.min.js" rel="stylesheet">
 </head>
 
-<body>
-<form id="form1" name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<body background="tt.jpg">
+<form id="form1" name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" width=90% style="border:2px dotted hotpink;" cellpadding="4" cellspacing="4" >
  
   
 <center>
 <font size="6">ก๋วยเตี๋ยวบ้านลายจุดข้างวัง</font>
 </center>
-<table class="table">
-    <thead>
+<table class="table" width="100%" cellpadding="4" cellspacing="0" style="border:double 5px hotpink;" >
     <tr>
-      <td width="61">เส้น</td>
-      <td width="50">ต้มยำ.</td>
-       <td width="83">จำนวน</td>
-      <td width="39">น้ำใส</td>
-      <td width="83">จำนวน</td>
-      <td width="76">ปลาหมึก</td>
-      <td width="101">กุ้ง</td>
-      <td width="83">ไข่ยางมะตูม</td>
-      <td width="140">หมายเหตุ</td>
+      <td style="border:double 5px hotpink;" width="61">เส้น</td>
+      <td style="border:double 5px hotpink;" width="50">ต้มยำ.</td>
+      <td style="border:double 5px hotpink;" width="83">จำนวน</td>
+      <td style="border:double 5px hotpink;" width="39">น้ำใส</td>
+      <td style="border:double 5px hotpink;" width="83">จำนวน</td>
+      <td style="border:double 5px hotpink;" width="76">ปลาหมึก</td>
+      <td style="border:double 5px hotpink;" width="101">กุ้ง</td>
+      <td style="border:double 5px hotpink;" width="83">ไข่ยางมะตูม</td>
+      <td style="border:double 5px hotpink;" width="140">หมายเหตุ</td>
     </tr>
      </thead>
     <tr>
@@ -35,6 +35,12 @@
       <td><p>
         <input type="checkbox" name="tumyum1" id="tumyum1" />
         <br />
+        <script>
+		 if ( tumyum1 == on ){
+		 	document.all.tum
+		 }
+		
+		</script>
       </p></td>
       <td>
         <select name="count11" id="count11">
@@ -430,19 +436,24 @@
 /ฟอง</td>
       <td><input type="text" name="textfield4" id="textfield5" /></td>
     </tr>
+   
   </table>
   
   
   <p>
-   <input name="btn_sum" class="btn btn-primary" type="submit" id="btn_sum" value="สั่ง"/>
-  
+  <center> <input name="btn_sum" class="btn btn-primary" type="submit" id="btn_sum" value="สั่ง"/>
+  </p>
+  <p>
   ****ต้มยำ - น้ำใส ธรรมดา 35 เพิ่มกุ้ง 55 บาท/ตัว ปลาหมึก 55 บาท/ตัว ไขยางมะตูม 10 บาท/ฟอง****</p>
-  
+  </center>
   <p><br />
   </p>
   
-  
-  <?php
+
+
+</form>
+ <center>
+  <?
 
 if(isset($_POST['tumyum1']) || ($_POST['tumyum2']) 
 || ($_POST['tumyum13']) || ($_POST['tumyum4']) 
@@ -626,12 +637,11 @@ echo 'รวมเงิน ',$sum1+$sum2+$sum3+$sum4+$sum5+$sum11+$sum12+$sum13
 
 
 ?>
-</form>
 
 
-
-
-
+</center>
 
 </body>
 </html>
+
+
